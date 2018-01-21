@@ -20,12 +20,18 @@ public class DontForgetTheLyrics {
 	
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
+		JOptionPane.showMessageDialog(null, "Welcome. We're going to play a game.\n" + "In this game, I'm going to play a song.\n" + "I'm going to stop the song, and then\n" + "you're going to have to guess the\n" + "lyrics that come next. Ready? Let's go.");
 
 		// 5. Use the playSound method to play your song.
+		playSound("FreshPrince2.wav");
 
 		// 6. Make a pop-up for the player to type their answer.
+		String Lyric1 =JOptionPane.showInputDialog("What lyric comes next?");
 
 		// 7. If they answered correctly, tell them that they were right.
+		if(Lyric1.equalsIgnoreCase("got flipped turned upside down")) {
+			JOptionPane.showMessageDialog(null, "Correct! Let's continue.");
+		}
 
 		// 8. Otherwise, tell them they are wrong, and give them the answer.
 
